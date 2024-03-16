@@ -51,7 +51,7 @@
 		A0773D422BA60095000F2139 /* Taxes */ = {
 			isa = PBXGroup;
 			children = (
-				A0773D432BA60095000F2139 /* TaxesApp.swift */,
+				A0773D512BA6009D000F2139 /* App */,
 				A0773D452BA60095000F2139 /* ContentView.swift */,
 				A0773D472BA60096000F2139 /* Assets.xcassets */,
 				A0773D492BA60096000F2139 /* Preview Content */,
@@ -65,6 +65,14 @@
 				A0773D4A2BA60096000F2139 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0773D512BA6009D000F2139 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A0773D432BA60095000F2139 /* TaxesApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
