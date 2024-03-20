@@ -19,10 +19,10 @@ struct LoginView: View {
                 .frame(width: 125, height: 125)
             
             // Form Fields
-            VStack {
+            VStack(spacing: 24) {
                 InputView(
                     text: $email,
-                    title: "Email",
+                    title: "Email Address",
                     placeholder: "Example@email.com"
                 )
                 .textInputAutocapitalization(.never)
@@ -36,9 +36,41 @@ struct LoginView: View {
             }
             
             // Sign in Button
+            Button(action: {}) {
+                GeometryReader { geometry in
+                    HStack {
+                        Text("Log in")
+                            .fontWeight(.semibold)
+                            .font(.title2)
+                        Image(systemName: "arrow.right")
+                    }
+                    .frame(
+                        width: geometry.size.width - 32,
+                        height: 30
+                    )
+                    .foregroundStyle(.white)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundStyle(.blue)
+                    )
+                }
+            }
             
             // Sign up Button
+            NavigationLink {
+
+            } label: {
+                HStack(spacing: 2) {
+                    Text("Don't have an account?")
+                    Text("Sign up")
+                        .fontWeight(.bold)
+                }
+                .font(.system(size: 14))
+            }
+
         }
+        .padding()
     }
 }
 
